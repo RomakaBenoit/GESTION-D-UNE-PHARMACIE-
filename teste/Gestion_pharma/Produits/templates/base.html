@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PROJET DE FIN D'ANNEE BY ROMAKA_BBENOIT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- <link rel="stylesheet" href="asset/bootstrap.min.css"> -->
+<link rel="stylesheet" href="{% static 'style.css'%}">
+
+</head>
+
+
+<body>
+    <!-- zone gauche -->
+{% include "zone_gauche.html" %}
+
+    <div class="app-content">
+        {% include "header.html" %}
+        {% include "header2.html" %}
+        {% include "produit.html" %}
+
+     
+    </div>
+     
+    
+</body>
+
+<!-- partial -->
+<script  src="static{% static 'script.js'%}"></script>
+<!-- <script src="asset/bootstrap.min.js"></script> -->
+
+</body>
+</html>
